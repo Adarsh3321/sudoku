@@ -1,2 +1,2 @@
-# sudoku Sudoku-a.vercel.app
+# [sudoku](https://Sudoku-a.vercel.app)
  
