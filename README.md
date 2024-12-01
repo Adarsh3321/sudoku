@@ -1,2 +1,2 @@
-# sudoku
+# sudoku Sudoku-a.vercel.app
  
