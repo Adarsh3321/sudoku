@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+    width: 450px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  #sudoku-board {
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+  }
+  
+  #sudoku-board td {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  #sudoku-board td.selected {
+    background-color: #d3f8e2;
+  }
+  
+  #sudoku-board td.filled {
+    background-color: #f0f0f0;
+  }
+  
+  /* Add bold lines for 3x3 grid sections */
+  #sudoku-board td:nth-child(3n) {
+    border-right: 3px solid #000;
+  }
+  
+  #sudoku-board tr:nth-child(3n) td {
+    border-bottom: 3px solid #000;
+  }
+  
+  /* Additional styling for the number box */
+  #number-box {
+    margin: 20px 0;
+  }
+  
+  #number-box button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  #number-box button.selected {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  #restart-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #777;
+  }
+  
